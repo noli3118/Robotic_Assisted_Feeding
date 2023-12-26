@@ -15,7 +15,7 @@ We evaluate our approach on a panda robotic arm and achieve a spill-free traject
 over different foods including sugar, peas, and yogurt.
 
 ## Algorithm
-![alt text](../algorithm_photos/motion_prims.png)
-![alt text](../algorithm_photos/trajectory.png)
+![alt text](./algorithm_photos/motion_prims.png)
+![alt text](./algorithm_photos/trajectory.png)
 
 
