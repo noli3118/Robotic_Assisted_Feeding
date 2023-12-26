@@ -1,0 +1,8 @@
+urdf: panda.urdf
+link_radius: 0.05 
+base_links:
+  - panda_link0
+ee_links:
+  - panda_link8
+starting_config: [0.4925, -1.28386, -1.2087, -1.76138, 1.18595, 1.26622, -1.59615]
+obstacles:

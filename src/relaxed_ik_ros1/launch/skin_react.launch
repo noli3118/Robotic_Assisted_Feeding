@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="flag" default="linear" />
+    <include file="$(find franka_example_controllers)/launch/hiro_joint_velocity_example_controller.launch" pass_all_args="true"/>
+    <include file="$(find relaxed_ik_ros1)/launch/demo.launch" pass_all_args="true"/>
+    <node pkg="relaxed_ik_ros1" type="xbox_input.py" name="xbox_input" output="screen">
+        <param name="flag" value="$(arg flag)" />
+    </node>
+    <node pkg="joy" type="joy_node" name="joy" output="screen" />
+    <!-- <node pkg="relaxed_ik_ros1" type="SelfCapSkinPatch2x2Plot.py" name="skin_touch" output="screen" /> -->
+</launch>
